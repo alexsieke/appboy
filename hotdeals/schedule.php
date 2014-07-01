@@ -22,6 +22,8 @@ foreach($file as $line){
 /*set global variables*/
 $total_pushes = 0;
 
+$COMPANY_SECRET = "";
+
 /*Read in people / deals
 0 = person_id
 1 = app type
