@@ -124,7 +124,8 @@ function send_iphone($deal_id, $people_array){
 	    'Content-Length: ' . strlen($data_string))                                                                       
 	);
 
-	$result = curl_exec($ch);
+	//$result = curl_exec($ch);
+	//echo "$result\n";
 
 }
 
@@ -164,7 +165,8 @@ function send_android($deal_id, $people_array){
 	    'Content-Length: ' . strlen($data_string))                                                                       
 	);
 
-	$result = curl_exec($ch);
+	//$result = curl_exec($ch);
+	//echo "$result\n";
 
 }
 

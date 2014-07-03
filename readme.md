@@ -34,5 +34,27 @@ Rename the downloaded jumbo files to
 Your directory should now look like this:
 
 	ls
-	deals.csv	people.csv	push_log.txt	schedule.php
+	deals.csv	people.csv	schedule.php
 	
+	
+You are now ready to run the push notification script
+
+	php -f schedule.php > log.txt
+
+In the log file you will find the result returned from the rest api from your push requests
+	
+**important** - when you run the script it will send out a lot of push notifications.  Be careful and make sure you fully understand the code before executing the above command
+
+After completion of the code you will generate a file that contains the name of the campaign and the date in which the campaign was run.
+
+	hotdeals-2014-07-03.txt
+	
+its contents should look something like this.
+
+	174	1120991	2014-07-03 23:22:19
+	580	1120991	2014-07-03 23:22:19
+	12122	1120991	2014-07-03 23:22:19
+	20590	1120991	2014-07-03 23:22:19
+	22330	1120991	2014-07-03 23:22:19
+
+###You are now a push master
